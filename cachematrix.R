@@ -1,5 +1,7 @@
-## Functions will be able to cache the inverse of a matrix rather than 
-## compute it repeatedly to reduce computation.
+## cachematrix.R contains functions that will be able to cache the inverse of a 
+## matrix rather than compute it repeatedly to reduce computation.
+
+## Assignment assumption here is that input matrix will be square invertible matrix
 
 ## This function creates "matrix" object that can cache its inverse.
 makeCacheMatrix <- function(x = matrix()) 
@@ -11,7 +13,7 @@ makeCacheMatrix <- function(x = matrix())
 	{
     		x <<- y
     		invmat <<- NULL
-    }
+	}
 	## get the values to display
 	get <- function() x
 	## calculate the inverse and cache
