@@ -13,7 +13,7 @@ makeCacheMatrix <- function(x = matrix())
     		invmat <<- NULL
     }
 	## get the values to display
-    get <- function() x
+	get <- function() x
 	## calculate the inverse and cache
 	setinverse <- function() invmat <<- solve(x)
 	## display the function output (inverse matrix)
